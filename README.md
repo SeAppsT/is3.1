@@ -10,7 +10,7 @@
 {"login": "seapps", "password": "password"}
 ```
 
-#### Response
+#### Response:
 
 ```
 {
