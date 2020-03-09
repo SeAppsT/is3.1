@@ -60,3 +60,77 @@
     }
 }
 ```
+
+### POST /entity/table
+
+**Возвращает массив данных и массив описания полей**
+
+#### Examples:
+
+#### Request:
+
+```
+{
+    "table": "products",
+    "list_id": 7,
+    "get": [
+    	"price",
+    	"description",
+    	"name"
+    ],
+    "conditions": {
+        "name": "Phone"
+    }
+}
+```
+
+#### Response:
+
+```
+{
+    "data": [
+        {
+            "price": 50000,
+            "description": "Cool laptop for freelancers",
+            "name": "Phone"
+        },
+        {
+            "price": 20000,
+            "description": "Second phone",
+            "name": "Phone"
+        }
+    ],
+    "declaration": [
+        {
+            "id": 4,
+            "name": "name",
+            "type": "STRING",
+            "table_name": "products",
+            "title": null,
+            "sys": 0,
+            "linked_table": null,
+            "readonly": 0
+        },
+        {
+            "id": 5,
+            "name": "description",
+            "type": "STRING",
+            "table_name": "products",
+            "title": null,
+            "sys": 0,
+            "linked_table": null,
+            "readonly": 0
+        },
+        {
+            "id": 7,
+            "name": "price",
+            "type": "INT",
+            "table_name": "products",
+            "title": null,
+            "sys": 0,
+            "linked_table": null,
+            "readonly": 0
+        }
+    ]
+}
+```
