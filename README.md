@@ -30,6 +30,16 @@
 }
 ```
 
+### POST /user
+
+**Добавление нового пользователя**
+
+#### Request:
+
+```
+{"login": "<login>", "password": "<password>"}
+```
+
 ### POST /entity
 
 **Добавить запись**
