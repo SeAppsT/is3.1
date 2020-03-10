@@ -44,19 +44,12 @@
 
 ```
 {
-    "id": <int> | может быть пустым,
-    "table": <string>, не может быть пустым
-    "get": [
-        <массив строк>, только для select
-    ],
+    "table": <string>,
     "change": {
         <string>: <object>, изменяемые поля
     },
     "conditions": {
         <string>: <object>, поля-условия
-    },
-    "utils": {
-        <string>: <object>, утилиты запроса
     }
 }
 ```
