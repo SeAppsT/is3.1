@@ -14,6 +14,8 @@
 {"login": "seapps", "password": "password"}
 ```
 
+**Данный токен нужно отправлять с каждым запросом, заголовком "Authorization" **
+
 #### Response:
 
 ```
